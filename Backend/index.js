@@ -13,6 +13,9 @@ mongoose
     console.log(error);
   });
 
+import userRoutes from "./routes/user.route";
+app.use("/api/user", userRoutes);
+
 app.listen(3000, (req, res) => {
   console.log("Listenig to port 3500");
 });
