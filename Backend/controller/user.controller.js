@@ -35,6 +35,8 @@ const signUp = async (req, res) => {
 const signIn = async (req, res) => {
   try {
     const { email, password } = req.body;
+    // console.log(email);
+    console.log(req.body);
     if (!email || !password) {
       return res.status(400).json({
         success: false,
@@ -42,6 +44,7 @@ const signIn = async (req, res) => {
       });
     }
     const userEsists = await user.findOne({ email: email });
+    console.log(userEsists);
     if (!userEsists) {
       return res.status(404).json({
         success: false,

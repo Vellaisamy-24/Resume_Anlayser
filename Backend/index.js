@@ -2,6 +2,7 @@ import express from "express";
 import mongoose from "mongoose";
 import dotenv from "dotenv";
 const app = express();
+app.use(express.json());
 dotenv.config();
 mongoose
   .connect(process.env.mongoose_URL)
