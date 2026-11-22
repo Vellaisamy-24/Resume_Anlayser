@@ -13,7 +13,7 @@ mongoose
     console.log(error);
   });
 
-import userRoutes from "./routes/user.route";
+import userRoutes from "./routes/user.route.js";
 app.use("/api/user", userRoutes);
 
 app.listen(3000, (req, res) => {
