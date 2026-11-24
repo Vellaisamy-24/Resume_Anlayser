@@ -21,5 +21,5 @@ const resumeSchema = new mongoose.Schema(
   { timestamps: true },
 );
 
-const resume = mongoose.model("resume", resumeSchema);
+const resume = mongoose.model("Resume", resumeSchema);
 export default resume;
